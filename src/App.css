@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.App{
+  margin:0 auto;
+  width:100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  background-color: rgb(233, 233, 233);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.CalculateButton {
+  color: #ececec;
+  border: none;
+  font-weight: 600;
+  font-size: 25px;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 25px;
+  border-radius:5px;
+  font-family: 'Lato', sans-serif;
+  width:100%;
+  margin-top:50px;
+  /* border:2px solid #2c2c2c; */
+  transition:all 200ms;
+  background-color: #121314;
+
+}
+.CalculateButton:hover{
+  background-color: #3d4653;
+  color:#fff;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Delay{
+  font-size:25px;
+  margin-top:40px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.Input{
+  font-size:20px;
+  /* letter-spacing: 1px; */
+  width:55px;
+  outline:none;
+  border:2px solid #2e2e2e;
+  border-radius: 3px;
+  padding:3px;
+  float:right;
+  text-align:right;
+  margin-left:10px;
+}
+
+.AppHeader{
+  margin:0 auto;
+  width:100%;
+  text-align:center;
+  color:#fcba03;
+  font-size:40px;
+  /* background-color: #fcba03; */
+  font-weight: 700;
+  padding:10px;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100px;
+}
+.AppWrapper{
+  width:fit-content;
+  margin:0 auto;
+  background-color: #fff;
+  padding:20px 30px 30px 30px;
+  box-sizing: border-box;
+}
+
+.Graph{
+  width:100%;
+  padding:20px 100px;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+.Graphs{
+  margin:0 auto;
+}
+.listsortBy {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+  list-style-type: none;
+  border-radius: 7px;
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+  
+}
+
+.listsortBy li {
+  transition: all 100ms;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+  height: 100%;
+  border-radius: 30px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width:50%;
+  z-index: 1;
+  color:#fff;
+  text-align: center;
+  cursor:pointer;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sortByBackground {
+  background-color: #2d3136;
+  position: absolute;
+  transition: all 100ms;
+  height: 42px;
+  border-radius: 7px;
 }
